@@ -1,0 +1,231 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+html, body {
+    height: 100%;
+}
+.vertical-center-container {
+    display: table;
+    table-layout: fixed;
+}
+
+.vertical-center {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}
+
+
+
+/* SKROLLR */
+
+    .skrollr-desktop body {
+        height:100% !important;
+    }
+
+    body {
+        font-family:sans-serif;
+        background-image: url(/images/squared_metal.png);
+    }
+
+    p {
+        margin:1em 0;
+    }
+
+    .parallax-image-wrapper {
+        position:fixed;
+        left:0;
+        width:100%;
+        overflow:hidden;
+    }
+
+    .parallax-image-wrapper-50 {
+        height:50%;
+        top:-50%;
+    }
+
+    .parallax-image-wrapper-100 {
+        height:100%;
+        top:-100%;
+    }
+
+    .parallax-image {
+        display:none;
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+    }
+
+    .parallax-image-50 {
+        height:200%;
+        top:-50%;
+    }
+
+    .parallax-image-100 {
+        height:100%;
+        top:0;
+    }
+
+    .parallax-image.skrollable-between {
+        display:block;
+    }
+
+    .no-skrollr .parallax-image-wrapper {
+        display:none !important;
+    }
+
+    #skrollr-body {
+        height:100%;
+        overflow:visible;
+        position:relative;
+    }
+
+    .gap {
+        background:transparent center no-repeat;
+        background-size:cover;
+    }
+
+    .skrollr .gap {
+        background:transparent !important;
+    }
+
+    .gap-50 {
+        height:50%;
+    }
+
+    .gap-100 {
+        height:100%;
+    }
+
+/* END SCROLLR */
+
+#nav {
+    background-color: transparent;
+    border-color: transparent;
+
+}
+#nav .scrollable-after {
+    display: none;
+
+}
+
+#nav li {
+    display: none;
+}
+#nav .nav-pills {
+    color: white;
+}
+
+#nav .pull-left a{
+    font-size: 25px;
+    color: white;
+}
+
+#nav .pull-right a{
+    color: white;
+    font-size: 14pt;
+    margin: 0 14px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+}
+
+#nav .nav-pills a:hover {
+    color: #00ffff;
+
+    background: transparent;
+
+}
+
+#nav.body-nav {
+    color: black;
+    background: #fff;
+}
+
+#nav.body-nav a{
+    color: black;
+}
+
+#nav.body-nav .nav-pills a:hover {
+    color: #0000ff;
+    background: transparent;
+}
+
+#header {
+    background:transparent center no-repeat;
+    background-size:cover;
+    background-image: url(/images/1-DSC01831.JPG);
+    height: 100%;
+}
+
+#title h1{
+    display: none;
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff;
+    font-size:40pt;
+}
+
+#title h2{
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size:12pt;
+    visibility: hidden;
+}
+
+#title #scroll-down{
+    color: #ffffff;
+    position: absolute;
+    bottom: 20px;
+    display:none;
+    left: 42%;
+    background-color: #000000;
+    border-radius: 4px;
+    borer: 1px;
+    padding: 3px 5px;
+    text-transform: uppercase;
+
+}
+#title #scroll-down i{
+    color: #ffcc00;
+    padding: 0 5px
+}
+
+
+#about {
+    height: 370px;
+    background-image: url(/images/squared_metal.png);
+    padding: 50px 0;
+
+}
+
+#about img{
+    margin-right: 50px;
+
+
+}
+
+#projects {
+    background: #fff;
+    height: 100%;
+}
+
+#projects p {
+    text-align: justify;
+
+}
+
+#projects ul{
+    padding-top: 10px;
+}
+
+
+
+

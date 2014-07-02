@@ -1,0 +1,14 @@
+{
+  "name": "rob-next",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "jquery": "~1.11.0",
+    "skrollr": "~0.6.26",
+    "fontawesome": "~4.1.0",
+    "velocity": "~0.2.1",
+    "skrollr-menu": "git@github.com:Prinzhorn/skrollr-menu.git#~0.1.12",
+    "jquery-waypoints": "~2.0.5"
+  },
+  "devDependencies": {}
+}
