@@ -35,18 +35,39 @@ var  main = (function(){
 
     }
 
- 
+    function setPraiseAnimations(){
+        var shownCounter = 0;
+        $("#praise-list li").each(function(index, element){
+            if(index > 1){
+                $(element).css("display","none");
+            }
+        });
+
+        function swapAnimation(){
+            $("#praise-list li").slice(shownCounter,2).velocity("transition.slideRightOut");
+            setTimeout(function(){
+                $("#praise-list li").slice(shownCounter,shownCounter + 2).css("display", "none");
+                shownCounter = (shownCounter + 2) % $("#praise-list li").length;
+                $("#praise-list li").slice(shownCounter,shownCounter + 2).css({visibility: "hidden", display: "inline-block"}).velocity("transition.slideLeftIn", {display: "inline-block"});
+            }, 1000);
+        }
+
+        setInterval(swapAnimation, 10000);
+
+
+    }
 
     return function(){
         introAnimations();
         setWayPoints();
+        setPraiseAnimations();
 
 
     };
 })();
 
 WebFont.load({
-    google: { families: [ 'Permanent+Marker::latin', 'Roboto::latin' ] },
+    google: { families: [ 'Permanent+Marker::latin', 'Roboto::latin', 'Open+Sans::latin' ] },
     active: main
 });
 

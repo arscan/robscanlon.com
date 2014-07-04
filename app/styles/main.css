@@ -8,6 +8,26 @@
 html, body {
     height: 100%;
 }
+
+h1, h2, h3 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 20px;
+
+}
+
+hr {
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
 .vertical-center-container {
     display: table;
     table-layout: fixed;
@@ -206,6 +226,11 @@ html, body {
 
 }
 
+#about h1 {
+    text-align: left;
+
+}
+
 #about img{
     margin-right: 50px;
 
@@ -213,16 +238,44 @@ html, body {
 }
 
 #projects {
-    background: #fff;
+    background-image: url(/images/congruent_outline.png);
+    color: #fff;
+}
+#projects h1 {
+    padding: 40px 0;
+}
+
+#projects h1 small {
+    display:block;
+    padding-top: 5px;
+
 }
 
 #projects p {
     text-align: justify;
+    padding: 0 20px;
 
 }
 
 #projects ul{
     padding-top: 10px;
+}
+
+#projects #praise {
+    padding: 0px;
+    margin: 0px;
+    height: 300px;
+}
+
+#projects #praise-list {
+    list-style-type: none;
+}
+
+#projects #praise-list li{
+    display: inline-block;
+    padding-left: 25px;
+    height: 250px;
+    width: 45%;
 }
 
 
