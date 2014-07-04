@@ -54,20 +54,35 @@ var  main = (function(){
 
         setInterval(swapAnimation, 10000);
 
+    }
 
+    function setLinks(data){
+        var color;
+        console.log(data.length);
+        for(var i = 0; i< data.length; i++){
+            color = parseInt(Math.random() * 50 +75, 10);
+            $('<a/>', {
+                text: data[i].name,
+                href: data[i].url,
+                style: "color: rgba(" + color + "," + color + "," + color + ", 1.0)"
+            }).appendTo('#background-links');
+        }
     }
 
     return function(){
         introAnimations();
         setWayPoints();
         setPraiseAnimations();
-
-
+        $.ajax("http://links.robscanlon.com/userlinks.json").done(setLinks);
     };
 })();
 
 WebFont.load({
-    google: { families: [ 'Permanent+Marker::latin', 'Roboto::latin', 'Open+Sans::latin' ] },
+    google: { families: [ 
+        'Permanent+Marker::latin', 
+        'Roboto::latin', 
+        'Open+Sans::latin',
+        'Special+Elite::latin' ] },
     active: main
 });
 

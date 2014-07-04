@@ -240,6 +240,7 @@ hr {
 #projects {
     background-image: url(/images/congruent_outline.png);
     color: #fff;
+    box-shadow: 0 0 10px #000000;
 }
 #projects h1 {
     padding: 40px 0;
@@ -277,6 +278,56 @@ hr {
     height: 250px;
     width: 45%;
 }
+
+#career {
+    background-color: #fff;
+
+
+}
+
+#bookmarks {
+    height: 400px;
+    overflow: hidden;
+}
+
+#bookmarks h1 {
+    position: relative;
+    top: 150px;
+    z-index:5;
+    text-shadow: 0 0 10px #fff;
+}
+
+#bookmarks h1 div{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px #000000;
+
+}
+#bookmarks h1 small {
+    display:block;
+    padding-top: 5px;
+    color: #000;
+}
+#bookmarks #background-links {
+    margin-top: -150px;
+    text-align: justify;
+
+}
+
+#bookmarks #background-links a {
+    font-family: 'Special Elite';
+    padding-right: 20px;
+    color: #666;
+}
+
+#kingsquest {
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000000;
+}
+
 
 
 
