@@ -1,0 +1,10 @@
+#kq-background {
+    width:1561px;
+    height:250px;
+    background-image:url(background.png);
+    bottom:20px;
+    position:absolute;
+    z-index:20;
+    lieft:0px;
+}
+

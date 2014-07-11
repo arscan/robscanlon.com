@@ -329,6 +329,67 @@ hr {
 }
 
 
+#kq {
+    position:relative;
+    height: 500px;
+    background: rgb(0,10,170); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0,10,170,1) 0%, rgba(128,128,213,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,10,170,1)), color-stop(100%,rgba(128,128,213,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,10,170,1) 0%,rgba(128,128,213,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,10,170,1) 0%,rgba(128,128,213,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,10,170,1) 0%,rgba(128,128,213,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,10,170,1) 0%,rgba(128,128,213,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000aaa', endColorstr='#8080d5',GradientType=0 ); /* IE6-9 */
+}
+#kq-game {
+    width:1526px;
+    height:250px;
+    background-image:url(/images/kq/background.png);
+    bottom:20px;
+    position:absolute;
+    z-index:20;
+    left:0px;
+}
+
+#kq-background-repeat {
+    width:100%;
+    height:250px;
+    background-image:url(/images/kq/background-repeat.png);
+    background-repeat: repeat-x;
+    bottom:20px;
+    position:absolute;
+    z-index:18;
+    left:0px;
+}
+#command-line {
+    width:100%;
+    background-color: #000000;
+    bottom:0px;
+    position:absolute;
+    z-index:20;
+    left:0px;
+    margin: 0 auto;
+    padding: 0 auto;
+    cellolor: #FFFFFF;
+}
+
+#kq input {
+    font-family:Courier;
+    color: #CCCCCC;
+    background: #000000;
+    padding: 0px;
+    margin:0px;
+    border:0px;
+    width:80%;
+    font-weight: bold;
+}
+
+#kq input:focus {
+    outline: none;
+}
+
+
+
 
 
 
